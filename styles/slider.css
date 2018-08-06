@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-family: 'Economica', 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 48vw; /*height is 48% of viewport width, maintains ratio*/
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    width: 100vw; /* take up viewport width */
+    min-height: 48vw;
+    overflow: hidden;
+}
+
+.layer .content-wrap {
+    position: absolute;
+    width: 100vw;
+    min-height: 48vw;
+}
+
+.layer .content-body {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.layer img {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layer h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom {
+    background: black;
+    z-index: 1;
+}
+
+.bottom .content-body {
+    right: 5%;
+    top: 65%;
+    z-index: 2;
+}
+
+.top {
+    background: rgb(248, 247, 243);
+    color: black;
+    z-index: 2;
+}
+
+.top .content-body {
+    left: 5%;
+    top: 35%;
+    color: #333;
+    z-index: 2;
+}
+
+.handle {
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: white;
+    border-left: 4px solid black;
+    width: 4px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+@media(max-width: 768px) {
+    body {
+        font-size: 75%;
+    }
+}

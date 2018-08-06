@@ -1,0 +1,155 @@
+/* Color Palette
+#e7f5f7	light
+#b0e0e6	
+#198c8c	
+#003366	
+#0b1a4d dark
+*/
+
+/* Global styles */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #198c8c;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+    padding-top: 50px;
+}
+
+/* All links */
+a {
+    color: #00afaf; 
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.download {
+    text-decoration: none;
+    font-size: 18px;
+    background: white;
+    color: rgb(0, 116, 131);
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    font-size: 0;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    background: #00afaf;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #00afaf;
+}
+
+
+/* Header & Footer */
+header, footer {
+    background: rgb(0, 25, 49);
+    color: #e7f5f7;
+}
+
+header {
+    padding: 50px 5px;
+    position: relative;
+}
+
+header h1, header h2 {
+    color: #FFFFFF;
+    margin: 2px;
+}
+
+h1 { 
+    font-size: 40px;
+    font-family: 'Cuprum', cursive, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.col-narrow {
+    float: left;
+    width: 30%;
+}
+
+.col-wide {
+    float: left;
+    width: 70%;
+    padding-left: 15px;
+    min-height: 100px;
+}
+
+section {
+    padding: 0 15px;
+    display: block;
+}
+
+/* Work Experience */
+.work, .education, .projects {
+    background: #e7f5f7;
+    margin: 10px auto 20px auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dates {
+    font-style: italic;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+.job-descrip, .edu-descrip, .project-descrip {
+    margin-bottom: 20px;
+}
+
+footer {
+    clear: both;
+    padding: 10px 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
