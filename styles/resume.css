@@ -16,8 +16,9 @@ html {
 }
 
 body {
-    background: #198c8c;
-    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    background: white;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: rgb(0, 116, 131);
     margin: 0;
 }
 
@@ -97,7 +98,7 @@ header h1, header h2 {
 
 h1 { 
     font-size: 40px;
-    font-family: 'Cuprum', cursive, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-family: 'Lato', Calibri, Arial, sans-serif;;
 }
 
 .col-narrow {
@@ -119,7 +120,7 @@ section {
 
 /* Work Experience */
 .work, .education, .projects {
-    background: #e7f5f7;
+    background: white;
     margin: 10px auto 20px auto;
 }
 
